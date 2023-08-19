@@ -1,6 +1,6 @@
 body {
     background-color: lightgrey ;
-    font-size: 32px;
+    /* font-size: 32px; */
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
@@ -21,4 +21,38 @@ body {
     border-radius: 20px;
     border-bottom-right-radius: 160px;
     padding: 30px;
+}
+
+.first-contain {
+    display: flex;
+    flex-direction: row;
+    width: 380px;
+    justify-content: space-between;
+    color: hsl(0, 1%, 44%);
+    font-size: 11px;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+}
+
+.val {
+    display: flex;
+    flex-direction: row;    
+    height: 100px;
+} 
+
+button {
+    width: 120px;
+    height: 58px;
+    border: 1px solid hsl(0, 0%, 86%);
+    margin-left: 28px;  
+    border-radius: 5px;   
+    background-color: white;         
+}
+
+.one {
+   margin-left: 0;
+}
+
+.year {
+   margin-right: 40px;
 }
