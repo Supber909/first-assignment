@@ -1,3 +1,24 @@
 body {
-    background-color: Off white: hsl(0, 0%, 94%);
+    background-color: lightgrey ;
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.first-box {
+    width: 600px;
+    height: 450px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border-bottom-right-radius: 160px;
+    padding: 30px;
 }
