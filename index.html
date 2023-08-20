@@ -1,28 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Age Calculator App</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Age Calculator App</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="first">
-        <div class="first-box">
-            <div class="first-contain">
-                <p>DAY</p>
-                <p>MONTH</p>
-                <p class="year">YEAR</p>
+    <section>
+        <div class="date-calculator">
+            <div class="input-container">
+                <p class="title">DAY</p>
+                <input type="number" id="input-day" placeholder="DD" />
+                <p class="hidden text-empty-field">This field is required</p>
             </div>
-                <div class="val">
-                 <button class="one"></button>
-                 <button></button>
-                 <button></button>
-                </div>
+
+            <div class="input-container">
+                <p class="title">MONTH</p>
+                <input type="number" id="input-month" placeholder="MM" />
+                <p class="hidden text-empty-field">This field is required</p>
+            </div>
+
+            <div class="input-container">
+                <p class="title">YEAR</p>
+                <input type="number" id="input-year" placeholder="YYYY" />
+                <p class="hidden text-empty-field">This field is required</p>
+            </div>
         </div>
-    </div>
+        <div class="btn-line">
+            <button class="btn-calcula">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="34" viewBox="0 0 46 44">
+                    <g fill="none" stroke="#FFF" stroke-width="2">
+                        <path
+                            d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+                    </g>
+                </svg>
+            </button>
+        </div>
+        <div class="container-date">
+            <p><span class="span-years">--</span>years</p>
+            <p><span class="span-months">--</span>months</p>
+            <p><span class="span-days">--</span>days</p>
+        </div>
+    </section>
 </body>
+
 </html>
